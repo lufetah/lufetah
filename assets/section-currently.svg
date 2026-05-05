@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
+  <rect width="900" height="220" rx="20" fill="#fdf6ff"></rect>
+  <rect x="1" y="1" width="898" height="218" rx="19" fill="none" stroke="#e9d5ff" stroke-width="1"></rect>
+
+  <text x="40" y="58" font-size="28">🍡</text>
+  <text x="84" y="58" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="600" fill="#8b5cf6">currently</text>
+
+  <g font-family="ui-serif, Georgia, serif" font-size="17" fill="#4a3b5c">
+    <text x="40" y="105"><tspan fill="#b197fc" font-weight="600">↳</tspan>  whispering to language models</text>
+    <text x="40" y="138"><tspan fill="#ffb4c4" font-weight="600">↳</tspan>  growing a garden of half-finished prototypes</text>
+    <text x="40" y="171"><tspan fill="#fde68a" font-weight="600" stroke="#f59e0b" stroke-width="0.5">↳</tspan>  learning, mostly in public</text>
+  </g>
+
+  <line x1="40" y1="195" x2="860" y2="195" stroke="#e9d5ff" stroke-width="1" stroke-dasharray="2 6"></line>
+</svg>

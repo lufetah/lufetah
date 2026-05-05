@@ -1,39 +1,23 @@
 <div align="center">
 
-```
-        ✿  ✿  ✿
-       ( ˘ ³˘)♥
-      / lufetah \
-       ‾‾‾‾‾‾‾‾
-```
-
-### *hi, i'm lufetah ♡*
-
-**vibecoder** · *making soft things with loud models*
+<img src="assets/header.svg" alt="hi, i'm lufetah — vibecoder" width="100%" />
 
 </div>
 
----
+<br/>
 
-### 🌷 &nbsp; about
+<img src="assets/section-about.svg" alt="about: a tiny human who tells computers what to do, gently. i build with whatever AI is doing this week." width="100%" />
 
-a tiny human who tells computers what to do, gently. <br>
-i build with whatever AI is doing this week.
+<br/>
 
-### 🍡 &nbsp; currently
+<img src="assets/section-currently.svg" alt="currently: whispering to language models · growing a garden of half-finished prototypes · learning, mostly in public" width="100%" />
 
-- ↳ &nbsp; whispering to language models
-- ↳ &nbsp; growing a garden of half-finished prototypes
-- ↳ &nbsp; learning, mostly in public
+<br/>
 
-### 🫧 &nbsp; activity
+<img src="assets/section-activity-label.svg" alt="activity" width="100%" />
 
-![activity](https://github-readme-activity-graph.vercel.app/graph?username=lufetah&theme=minimal&hide_border=true&color=B197FC&line=B197FC&point=FFB4C4&bg_color=FDF6FF&title_color=8B5CF6)
+![activity graph](https://github-readme-activity-graph.vercel.app/graph?username=lufetah&theme=minimal&hide_border=true&color=B197FC&line=B197FC&point=FFB4C4&bg_color=FDF6FF&title_color=8B5CF6)
 
----
+<br/>
 
-<div align="center">
-
-*thanks for stopping by* &nbsp; ✿
-
-</div>
+<img src="assets/footer.svg" alt="thanks for stopping by ✿" width="100%" />

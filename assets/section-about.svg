@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" viewBox="0 0 900 180">
+  <rect width="900" height="180" rx="20" fill="#fdf6ff"></rect>
+  <rect x="1" y="1" width="898" height="178" rx="19" fill="none" stroke="#e9d5ff" stroke-width="1"></rect>
+
+  
+  <text x="40" y="58" font-size="28">🌷</text>
+
+  
+  <text x="84" y="58" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="600" fill="#8b5cf6">about</text>
+
+  
+  <text x="40" y="100" font-family="ui-serif, Georgia, serif" font-size="17" fill="#4a3b5c">a tiny human who tells computers what to do, gently.</text>
+  <text x="40" y="128" font-family="ui-serif, Georgia, serif" font-size="17" fill="#4a3b5c">i build with whatever AI is doing this week.</text>
+
+  
+  <line x1="40" y1="155" x2="860" y2="155" stroke="#e9d5ff" stroke-width="1" stroke-dasharray="2 6"></line>
+</svg>

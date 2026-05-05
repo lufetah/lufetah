@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdf6ff"></stop>
+      <stop offset="50%" stop-color="#fce7f3"></stop>
+      <stop offset="100%" stop-color="#e9d5ff"></stop>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20"></feGaussianBlur>
+    </filter>
+  </defs>
+  <rect width="900" height="320" rx="24" fill="url(#bg)"></rect>
+
+  
+  <circle cx="120" cy="80" r="60" fill="#ffb4c4" opacity="0.45" filter="url(#soft)"></circle>
+  <circle cx="780" cy="240" r="80" fill="#b197fc" opacity="0.35" filter="url(#soft)"></circle>
+  <circle cx="820" cy="60" r="40" fill="#fde68a" opacity="0.5" filter="url(#soft)"></circle>
+
+  
+  <text x="450" y="80" text-anchor="middle" font-family="ui-monospace, &#39;JetBrains Mono&#39;, monospace" font-size="16" fill="#8b5cf6" font-weight="500">
+    <tspan x="450" dy="0">✿  ✿  ✿</tspan>
+    <tspan x="450" dy="22">( ˘ ³˘)♥</tspan>
+    <tspan x="450" dy="22">/ lufetah \</tspan>
+    <tspan x="450" dy="22">‾‾‾‾‾‾‾‾</tspan>
+  </text>
+
+  
+  <text x="450" y="225" text-anchor="middle" font-family="ui-serif, Georgia, &#39;Times New Roman&#39;, serif" font-style="italic" font-size="44" fill="#6b46a8" font-weight="400">hi, i&#39;m lufetah ♡</text>
+
+  
+  <text x="450" y="265" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" fill="#8b5cf6" font-weight="600">vibecoder</text>
+  <text x="450" y="265" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" fill="#b197fc" font-style="italic">
+    <tspan dx="6">·  making soft things with loud models</tspan>
+  </text>
+
+  
+  <circle cx="200" cy="290" r="3" fill="#ffb4c4"></circle>
+  <circle cx="220" cy="290" r="3" fill="#b197fc"></circle>
+  <circle cx="240" cy="290" r="3" fill="#fde68a"></circle>
+  <circle cx="660" cy="290" r="3" fill="#fde68a"></circle>
+  <circle cx="680" cy="290" r="3" fill="#b197fc"></circle>
+  <circle cx="700" cy="290" r="3" fill="#ffb4c4"></circle>
+</svg>
