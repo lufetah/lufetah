@@ -1,16 +1,39 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**lufetah/lufetah** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```
+        ✿  ✿  ✿
+       ( ˘ ³˘)♥
+      / lufetah \
+       ‾‾‾‾‾‾‾‾
+```
 
-Here are some ideas to get you started:
+### *hi, i'm lufetah ♡*
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**vibecoder** · *making soft things with loud models*
+
+</div>
+
+---
+
+### 🌷 &nbsp; about
+
+a tiny human who tells computers what to do, gently. <br>
+i build with whatever AI is doing this week.
+
+### 🍡 &nbsp; currently
+
+- ↳ &nbsp; whispering to language models
+- ↳ &nbsp; growing a garden of half-finished prototypes
+- ↳ &nbsp; learning, mostly in public
+
+### 🫧 &nbsp; activity
+
+![activity](https://github-readme-activity-graph.vercel.app/graph?username=lufetah&theme=minimal&hide_border=true&color=B197FC&line=B197FC&point=FFB4C4&bg_color=FDF6FF&title_color=8B5CF6)
+
+---
+
+<div align="center">
+
+*thanks for stopping by* &nbsp; ✿
+
+</div>
