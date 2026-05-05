@@ -28,9 +28,9 @@
   <text x="450" y="225" text-anchor="middle" font-family="ui-serif, Georgia, &#39;Times New Roman&#39;, serif" font-style="italic" font-size="44" fill="#6b46a8" font-weight="400">hi, i&#39;m lufetah ♡</text>
 
   
-  <text x="450" y="265" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" fill="#8b5cf6" font-weight="600">vibecoder</text>
-  <text x="450" y="265" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" fill="#b197fc" font-style="italic">
-    <tspan dx="6">·  making soft things with loud models</tspan>
+  <text x="450" y="265" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16">
+    <tspan fill="#8b5cf6" font-weight="600">vibecoder</tspan>
+    <tspan fill="#b197fc" font-style="italic" dx="6">·  making soft things with loud models</tspan>
   </text>
 
   
