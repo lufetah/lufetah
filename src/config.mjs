@@ -48,7 +48,7 @@ export const config = {
   // §04 Connect — rendered as clickable badges under the SVG. href:null => "// soon".
   connect: [
     { name: 'github', value: 'github.com/lufetah', href: 'https://github.com/lufetah' },
-    { name: 'x', value: '// soon', href: null },
+    { name: 'x', value: 'x.com/chefhateful', href: 'https://x.com/chefhateful' },
     { name: 'website', value: '// soon', href: null },
     { name: 'email', value: '// soon', href: null },
   ],

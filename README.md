@@ -9,7 +9,7 @@
 <p>
   <a href="https://github.com/lufetah"><img src="assets/connect-github.svg" height="38" alt="github" /></a>
   &nbsp;
-  <img src="assets/connect-x.svg" height="38" alt="x" />
+  <a href="https://x.com/chefhateful"><img src="assets/connect-x.svg" height="38" alt="x" /></a>
   &nbsp;
   <img src="assets/connect-website.svg" height="38" alt="website" />
   &nbsp;
