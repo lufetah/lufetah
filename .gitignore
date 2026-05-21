@@ -1,0 +1,9 @@
+node_modules/
+*.log
+.DS_Store
+.env
+
+# local preview artifacts
+*.png
+*.static.svg
+verify-static.html

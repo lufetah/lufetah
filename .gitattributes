@@ -1,0 +1,5 @@
+# Keep everything LF in the repo so Windows-local commits and the Linux Action
+# don't produce noisy CRLF/LF diffs against each other.
+* text=auto eol=lf
+*.ttf binary
+*.png binary

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "lufetah-static",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["C:\\Users\\nyan\\Desktop\\lufetah\\scripts\\serve.mjs"],
+      "port": 4173
+    }
+  ]
+}
