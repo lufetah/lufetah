@@ -10,13 +10,11 @@
 export const config = {
   username: 'lufetah',
 
-  // Small mono row above the name. dot:true draws a leading lime dot;
-  // `pre` renders grey, `hi` renders white.
-  meta: [
-    { dot: true, pre: '', hi: 'v1.0 · vibecoder' },
-    { pre: 'est. ', hi: 'somewhere' },
-    { pre: 'status · ', hi: 'shipping' },
-  ],
+  // Small mono row above the name. Empty = hidden (space reclaimed).
+  // To show it, add objects like:
+  //   { dot: true, pre: '', hi: 'v1.0 · vibecoder' },
+  //   { pre: 'est. ', hi: 'somewhere' }, { pre: 'status · ', hi: 'shipping' },
+  meta: [],
 
   eyebrow: '// hello world, my name is —',
   name: 'lufetah', // the big italic serif name; a lime "." is appended automatically
@@ -37,13 +35,11 @@ export const config = {
   manifestoSub:
     'AI-native. Prompts, agents, and whatever glue gets the thing out the door. Moving on ideas that would’ve taken a team a year.',
 
-  // §03 Currently — fill the values in. Leave a value '' to show the placeholder.
-  currently: [
-    { label: 'Working on', value: '', placeholder: '// your current project', when: 'today' },
-    { label: 'Exploring', value: '', placeholder: '// a rabbit hole', when: 'this week' },
-    { label: 'Open to', value: '', placeholder: '// collabs, intros, chaos', when: 'always' },
-    { label: 'Fun fact', value: '', placeholder: '// something true and slightly odd', when: 'irl' },
-  ],
+  // §03 Currently — empty = whole section hidden. To show it, add rows like:
+  //   { label: 'Working on', value: 'loogo', placeholder: '// your current project', when: 'today' },
+  //   { label: 'Exploring', value: '', placeholder: '// a rabbit hole', when: 'this week' },
+  // (value '' shows the grey placeholder; fill value to show real text.)
+  currently: [],
 
   // §04 Connect — rendered as clickable badges under the SVG. href:null => "// soon".
   connect: [

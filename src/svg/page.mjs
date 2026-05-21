@@ -94,39 +94,42 @@ export function renderPage({ config: cfg, data, fontFace }) {
   el.push(hline(0, W, 48, C.line));
 
   // ── HERO ─────────────────────────────────────────────────────────────────
-  // meta row
-  let mx = xL;
-  y = 96;
-  for (const item of cfg.meta) {
-    if (item.dot) {
-      el.push(`<circle cx="${r(mx + 3)}" cy="${r(y - 4)}" r="3" fill="${C.accent}"/>`);
-      mx += 14;
+  let hy = 96; // pathbar (48) + top padding (48)
+
+  // meta row (optional — empty array collapses the space)
+  if (cfg.meta && cfg.meta.length) {
+    let mx = xL;
+    for (const item of cfg.meta) {
+      if (item.dot) {
+        el.push(`<circle cx="${r(mx + 3)}" cy="${r(hy - 4)}" r="3" fill="${C.accent}"/>`);
+        mx += 14;
+      }
+      const pre = item.pre ? up(item.pre) : '';
+      const hi = up(item.hi);
+      el.push(text(mx, hy, `<tspan fill="${C.muted}">${esc(pre)}</tspan><tspan fill="${C.ink}">${esc(hi)}</tspan>`, { mono: true, size: 11, ls: 1.5 }));
+      mx += (pre.length + hi.length) * 7.1 + 30;
     }
-    const pre = item.pre ? up(item.pre) : '';
-    const hi = up(item.hi);
-    el.push(text(mx, y, `<tspan fill="${C.muted}">${esc(pre)}</tspan><tspan fill="${C.ink}">${esc(hi)}</tspan>`, { mono: true, size: 11, ls: 1.5 }));
-    mx += (pre.length + hi.length) * 7.1 + 30;
+    hy += 48;
   }
 
   // eyebrow
-  y = 144;
-  el.push(text(xL, y, up(cfg.eyebrow), { mono: true, size: 13, fill: C.muted, ls: 1.2 }));
+  el.push(text(xL, hy, up(cfg.eyebrow), { mono: true, size: 13, fill: C.muted, ls: 1.2 }));
+  hy += 136;
 
   // name (gradient fill + lime period)
-  y = 280;
-  el.push(text(xL - 2, y, `<tspan fill="url(#nameGrad)">${esc(cfg.name)}</tspan><tspan fill="${C.accent}">.</tspan>`, { size: 132, ls: -3 }));
+  el.push(text(xL - 2, hy, `<tspan fill="url(#nameGrad)">${esc(cfg.name)}</tspan><tspan fill="${C.accent}">.</tspan>`, { size: 132, ls: -3 }));
+  hy += 70;
 
   // tagline
-  y = 350;
   for (const line of cfg.tagline) {
-    el.push(text(xL, y, tspans(line), { size: 31, ls: -0.3 }));
-    y += 40;
+    el.push(text(xL, hy, tspans(line), { size: 31, ls: -0.3 }));
+    hy += 40;
   }
 
   // hero divider
-  y += 16;
-  el.push(hline(xL, xR, y, C.line));
-  const heroBottom = y;
+  hy += 16;
+  el.push(hline(xL, xR, hy, C.line));
+  const heroBottom = hy;
 
   // ── STATS STRIP ────────────────────────────────────────────────────────────
   const sTop = heroBottom + 40;
@@ -250,25 +253,28 @@ export function renderPage({ config: cfg, data, fontFace }) {
   const aBottom = cfY + 20;
   el.push(hline(xL, xR, aBottom, C.line));
 
-  // ── CURRENTLY (§03) ──────────────────────────────────────────────────────
-  secTop = aBottom + 40;
-  el.push(text(xL, secTop + 18, `<tspan fill="${C.accent}">§</tspan><tspan fill="${C.ink}">  ${esc(up('Currently'))}</tspan>`, { mono: true, size: 11, weight: 500, ls: 1.6 }));
-  el.push(text(xR, secTop + 17, '03', { mono: true, size: 10, fill: C.dim, anchor: 'end', ls: 1.2 }));
-  let ry = secTop + 56;
-  cfg.currently.forEach((row, i) => {
-    if (i) el.push(hline(xL, xR, ry - 20, C.lineSoft));
-    el.push(text(xL, ry, up(row.label), { mono: true, size: 11, fill: C.muted, ls: 1.2 }));
-    if (row.value) {
-      el.push(`<text x="${r(xL + 170)}" y="${r(ry)}" font-family="${F.mono}" font-size="14" fill="${C.ink}">${esc(row.value)}</text>`);
-    } else {
-      el.push(`<text x="${r(xL + 170)}" y="${r(ry)}" font-family="${F.mono}" font-size="13" fill="${C.dim}">${esc(row.placeholder)}</text>`);
-    }
-    el.push(text(xR, ry, up(row.when), { mono: true, size: 10, fill: C.dim, anchor: 'end', ls: 1.0 }));
-    ry += 44;
-  });
+  // ── CURRENTLY (§03) — optional (empty array hides the whole section) ───────
+  let fTop = aBottom + 40;
+  if (cfg.currently && cfg.currently.length) {
+    secTop = aBottom + 40;
+    el.push(text(xL, secTop + 18, `<tspan fill="${C.accent}">§</tspan><tspan fill="${C.ink}">  ${esc(up('Currently'))}</tspan>`, { mono: true, size: 11, weight: 500, ls: 1.6 }));
+    el.push(text(xR, secTop + 17, '03', { mono: true, size: 10, fill: C.dim, anchor: 'end', ls: 1.2 }));
+    let ry = secTop + 56;
+    cfg.currently.forEach((row, i) => {
+      if (i) el.push(hline(xL, xR, ry - 20, C.lineSoft));
+      el.push(text(xL, ry, up(row.label), { mono: true, size: 11, fill: C.muted, ls: 1.2 }));
+      if (row.value) {
+        el.push(`<text x="${r(xL + 170)}" y="${r(ry)}" font-family="${F.mono}" font-size="14" fill="${C.ink}">${esc(row.value)}</text>`);
+      } else {
+        el.push(`<text x="${r(xL + 170)}" y="${r(ry)}" font-family="${F.mono}" font-size="13" fill="${C.dim}">${esc(row.placeholder)}</text>`);
+      }
+      el.push(text(xR, ry, up(row.when), { mono: true, size: 10, fill: C.dim, anchor: 'end', ls: 1.0 }));
+      ry += 44;
+    });
+    fTop = ry + 4;
+  }
 
   // ── FOOTER ─────────────────────────────────────────────────────────────────
-  const fTop = ry + 4;
   el.push(hline(xL, xR, fTop, C.line));
   el.push(text(xL, fTop + 26, up(cfg.footerLeft), { mono: true, size: 10, fill: C.dim, ls: 1.4 }));
   const fRightText = up('live · last seen now');
