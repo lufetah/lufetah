@@ -1,21 +1,18 @@
-<!-- ⚠ GENERATED FILE — do not edit by hand. Change src/config.mjs and run `npm run build` (or just push; the Action rebuilds). -->
+# lufetah
 
-<div align="center">
+Web and game developer based in Switzerland.
 
-<a href="https://github.com/lufetah"><img src="assets/profile.svg" width="880" alt="lufetah — README" /></a>
+I build responsive web experiences and multiplayer gameplay systems. Right now, I am focused on an online tactical FPS in s&box / Source 2, alongside client-facing web work.
 
-### Connect
+## Current focus
 
-<p>
-  <a href="https://github.com/lufetah"><img src="assets/connect-github.svg" height="38" alt="github" /></a>
-  &nbsp;
-  <a href="https://x.com/chefhateful"><img src="assets/connect-x.svg" height="38" alt="x" /></a>
-  &nbsp;
-  <img src="assets/connect-website.svg" height="38" alt="website" />
-  &nbsp;
-  <img src="assets/connect-email.svg" height="38" alt="email" />
-</p>
+- **Game development** - networked gameplay, weapons, match systems, and player-facing UI in C#.
+- **Web development** - mobile-first websites and storefronts with clean, maintainable front ends.
 
-<sub>↻ auto-updated daily from real GitHub activity · last refresh 2026-05-21</sub>
+## Tools
 
-</div>
+`C#` `TypeScript` `JavaScript` `HTML` `CSS` `s&box` `Source 2` `Git`
+
+## Contact
+
+[GitHub](https://github.com/lufetah) | [X](https://x.com/chefhateful)
